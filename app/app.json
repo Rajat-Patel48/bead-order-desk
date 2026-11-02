@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Bead Order Desk",
+    "slug": "bead-order-desk",
+    "scheme": "beadorderdesk",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      ["expo-notifications", { "color": "#0D6B70" }]
+    ],
+    "experiments": { "typedRoutes": false },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.beadorderdesk.app"
+    },
+    "android": {
+      "package": "com.beadorderdesk.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0D6B70",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": { "favicon": "./assets/favicon.png" },
+    "extra": { "eas": { "projectId": "" } }
+  }
+}
